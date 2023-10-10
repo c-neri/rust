@@ -11,14 +11,13 @@ static PROMPT_1:&str  = "Set first number:";
 static PROMPT_2:&str  = "Set second number:";
 
 fn main() {
-    // INPUTS
     let choice: u8 = get_operation();
-   match choice {
-        6 => {
-            println!("Live long and prosper! 🖖");
-            exit(0); 
-        },
-        _ => {println!("Scelta non valida, riprova.")},
+    match choice {
+            6 => {
+                println!("Live long and prosper! 🖖");
+                exit(0); 
+            },
+            _ => {println!("Scelta non valida, riprova.")},
     }
 
     let n1: f32= get_input_number(&PROMPT_1);
@@ -33,7 +32,7 @@ fn main() {
         _ => {
             println!("Scelta non valida, riprova.");
             exit(0); 
-    },
+        },
     }
 
 }
